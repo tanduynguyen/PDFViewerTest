@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReaderViewController.h"
 
-@interface PTViewController : UIViewController
+@interface PTViewController : UIViewController <ReaderContentViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIView *pdfReader;
 
 @end
