@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ReaderViewController.h"
 
-@interface PTReadADateViewController : UIViewController
+@interface PTReadADateViewController : UIViewController <ReaderViewControllerDelegate, ReaderContentViewDelegate>
 
 @end

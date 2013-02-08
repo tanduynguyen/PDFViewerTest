@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D92F8BB16C4950C002DF215 /* PTReadADateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D92F8BA16C4950C002DF215 /* PTReadADateViewController.m */; };
 		8D981F5916C39E1A003DF314 /* bt_backtolib.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D981F5616C39E1A003DF314 /* bt_backtolib.png */; };
 		8D981F5A16C39E1A003DF314 /* bt_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D981F5716C39E1A003DF314 /* bt_share.png */; };
 		8D981F5B16C39E1A003DF314 /* bt_text.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D981F5816C39E1A003DF314 /* bt_text.png */; };
@@ -21,8 +22,7 @@
 		8D9B821616C234C9001A3B4B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B821516C234C9001A3B4B /* Default.png */; };
 		8D9B821816C234C9001A3B4B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B821716C234C9001A3B4B /* Default@2x.png */; };
 		8D9B821A16C234C9001A3B4B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B821916C234C9001A3B4B /* Default-568h@2x.png */; };
-		8D9B822016C234C9001A3B4B /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B821E16C234C9001A3B4B /* MainStoryboard_iPad.storyboard */; };
-		8D9B822316C234C9001A3B4B /* PTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D9B822216C234C9001A3B4B /* PTViewController.m */; };
+		8D9B822016C234C9001A3B4B /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B821E16C234C9001A3B4B /* iPad.storyboard */; };
 		8D9B823D16C23573001A3B4B /* AppIcon-057.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B822B16C23573001A3B4B /* AppIcon-057.png */; };
 		8D9B823E16C23573001A3B4B /* AppIcon-072.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B822C16C23573001A3B4B /* AppIcon-072.png */; };
 		8D9B823F16C23573001A3B4B /* AppIcon-114.png in Resources */ = {isa = PBXBuildFile; fileRef = 8D9B822D16C23573001A3B4B /* AppIcon-114.png */; };
@@ -68,6 +68,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D92F8B916C4950C002DF215 /* PTReadADateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTReadADateViewController.h; path = Controllers/PTReadADateViewController.h; sourceTree = "<group>"; };
+		8D92F8BA16C4950C002DF215 /* PTReadADateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTReadADateViewController.m; path = Controllers/PTReadADateViewController.m; sourceTree = "<group>"; };
 		8D981F5616C39E1A003DF314 /* bt_backtolib.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_backtolib.png; path = Resources/bt_backtolib.png; sourceTree = "<group>"; };
 		8D981F5716C39E1A003DF314 /* bt_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_share.png; path = Resources/bt_share.png; sourceTree = "<group>"; };
 		8D981F5816C39E1A003DF314 /* bt_text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bt_text.png; path = Resources/bt_text.png; sourceTree = "<group>"; };
@@ -86,9 +88,7 @@
 		8D9B821516C234C9001A3B4B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		8D9B821716C234C9001A3B4B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		8D9B821916C234C9001A3B4B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8D9B821F16C234C9001A3B4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		8D9B822116C234C9001A3B4B /* PTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PTViewController.h; sourceTree = "<group>"; };
-		8D9B822216C234C9001A3B4B /* PTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PTViewController.m; sourceTree = "<group>"; };
+		8D9B821F16C234C9001A3B4B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPad.storyboard; sourceTree = "<group>"; };
 		8D9B822B16C23573001A3B4B /* AppIcon-057.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-057.png"; path = "PDFViewerTest/Graphics/AppIcon-057.png"; sourceTree = "<group>"; };
 		8D9B822C16C23573001A3B4B /* AppIcon-072.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-072.png"; path = "PDFViewerTest/Graphics/AppIcon-072.png"; sourceTree = "<group>"; };
 		8D9B822D16C23573001A3B4B /* AppIcon-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "AppIcon-114.png"; path = "PDFViewerTest/Graphics/AppIcon-114.png"; sourceTree = "<group>"; };
@@ -169,6 +169,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D92F8B816C49496002DF215 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D92F8B916C4950C002DF215 /* PTReadADateViewController.h */,
+				8D92F8BA16C4950C002DF215 /* PTReadADateViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		8D9B81F716C234C8001A3B4B = {
 			isa = PBXGroup;
 			children = (
@@ -202,14 +211,13 @@
 		8D9B820916C234C8001A3B4B /* PDFViewerTest */ = {
 			isa = PBXGroup;
 			children = (
+				8D92F8B816C49496002DF215 /* Controllers */,
 				8D9B822A16C2355D001A3B4B /* Graphics */,
 				8D9B822916C23548001A3B4B /* Sources */,
 				8D9B821216C234C8001A3B4B /* PTAppDelegate.h */,
 				8D9B821316C234C8001A3B4B /* PTAppDelegate.m */,
-				8D9B821E16C234C9001A3B4B /* MainStoryboard_iPad.storyboard */,
+				8D9B821E16C234C9001A3B4B /* iPad.storyboard */,
 				8D9B829316C23C92001A3B4B /* iPhone.storyboard */,
-				8D9B822116C234C9001A3B4B /* PTViewController.h */,
-				8D9B822216C234C9001A3B4B /* PTViewController.m */,
 				8D9B820A16C234C8001A3B4B /* Supporting Files */,
 			);
 			path = PDFViewerTest;
@@ -371,7 +379,7 @@
 				8D9B821616C234C9001A3B4B /* Default.png in Resources */,
 				8D9B821816C234C9001A3B4B /* Default@2x.png in Resources */,
 				8D9B821A16C234C9001A3B4B /* Default-568h@2x.png in Resources */,
-				8D9B822016C234C9001A3B4B /* MainStoryboard_iPad.storyboard in Resources */,
+				8D9B822016C234C9001A3B4B /* iPad.storyboard in Resources */,
 				8D9B823D16C23573001A3B4B /* AppIcon-057.png in Resources */,
 				8D9B823E16C23573001A3B4B /* AppIcon-072.png in Resources */,
 				8D9B823F16C23573001A3B4B /* AppIcon-114.png in Resources */,
@@ -409,7 +417,6 @@
 			files = (
 				8D9B821016C234C8001A3B4B /* main.m in Sources */,
 				8D9B821416C234C8001A3B4B /* PTAppDelegate.m in Sources */,
-				8D9B822316C234C9001A3B4B /* PTViewController.m in Sources */,
 				8D9B827516C23588001A3B4B /* CGPDFDocument.m in Sources */,
 				8D9B827616C23588001A3B4B /* ReaderConstants.m in Sources */,
 				8D9B827716C23588001A3B4B /* ReaderContentPage.m in Sources */,
@@ -429,6 +436,7 @@
 				8D9B828516C23588001A3B4B /* ThumbsMainToolbar.m in Sources */,
 				8D9B828616C23588001A3B4B /* ThumbsViewController.m in Sources */,
 				8D9B828716C23588001A3B4B /* UIXToolbarView.m in Sources */,
+				8D92F8BB16C4950C002DF215 /* PTReadADateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,12 +451,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		8D9B821E16C234C9001A3B4B /* MainStoryboard_iPad.storyboard */ = {
+		8D9B821E16C234C9001A3B4B /* iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8D9B821F16C234C9001A3B4B /* en */,
 			);
-			name = MainStoryboard_iPad.storyboard;
+			name = iPad.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -154,21 +154,25 @@
 		CGFloat rightButtonX = viewWidth; // Right button start X position
         
         // BEGIN OF customized by tanduy
-        rightButtonX -= (PRINT_BUTTON_WIDTH + BUTTON_SPACE);
+        UIButton *moreButton;
         
-        UIButton *moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        
-        moreButton.frame = CGRectMake(rightButtonX, BUTTON_Y, PRINT_BUTTON_WIDTH, BUTTON_HEIGHT);
-        [moreButton setTitle:NSLocalizedString(@"More", @"button") forState:UIControlStateNormal];
-        moreButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
-		[moreButton setTitleColor:[UIColor colorWithWhite:0.0f alpha:1.0f] forState:UIControlStateNormal];
-		[moreButton setTitleColor:[UIColor colorWithWhite:1.0f alpha:1.0f] forState:UIControlStateHighlighted];
-        [moreButton addTarget:self action:@selector(moreButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
-        [moreButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
-        [moreButton setBackgroundImage:buttonN forState:UIControlStateNormal];
-        moreButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
-        
-        [self addSubview:moreButton]; titleWidth -= (PRINT_BUTTON_WIDTH + BUTTON_SPACE);
+        if (!IS_IPAD) {
+            rightButtonX -= (PRINT_BUTTON_WIDTH + BUTTON_SPACE);
+            
+            moreButton = [UIButton buttonWithType:UIButtonTypeCustom];
+            
+            moreButton.frame = CGRectMake(rightButtonX, BUTTON_Y, PRINT_BUTTON_WIDTH, BUTTON_HEIGHT);
+            [moreButton setTitle:NSLocalizedString(@"More", @"button") forState:UIControlStateNormal];
+            moreButton.titleLabel.font = [UIFont systemFontOfSize:14.0f];
+            [moreButton setTitleColor:[UIColor colorWithWhite:0.0f alpha:1.0f] forState:UIControlStateNormal];
+            [moreButton setTitleColor:[UIColor colorWithWhite:1.0f alpha:1.0f] forState:UIControlStateHighlighted];
+            [moreButton addTarget:self action:@selector(moreButtonTapped:) forControlEvents:UIControlEventTouchUpInside];
+            [moreButton setBackgroundImage:buttonH forState:UIControlStateHighlighted];
+            [moreButton setBackgroundImage:buttonN forState:UIControlStateNormal];
+            moreButton.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin;
+            
+            [self addSubview:moreButton]; titleWidth -= (PRINT_BUTTON_WIDTH + BUTTON_SPACE);
+        }
         // END OF customized by tanduy
         
 #if (READER_BOOKMARKS == TRUE) // Option
@@ -267,7 +271,9 @@
 			[self addSubview:titleLabel]; 
 		}
         
-        [self moreButtonTapped:moreButton];
+        if (!IS_IPAD) {
+            [self moreButtonTapped:moreButton];
+        }
 	}
 
 	return self;
